@@ -1,7 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div>
+  <div class="text-center px-0 iphoneSE:px-8">
     <ContentMain />
+    <Faq />
     <!-- <ContactMe class="scroll-mt-60 lg:scroll-mt-40" /> -->
   </div>
 </template>

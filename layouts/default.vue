@@ -2,6 +2,7 @@
 <template>
   <div class="selection:bg-cyan-500 selection:text-black bg-orange-200">
     <Header />
+    <SvgHeader />
     <nuxt />
     <Footer />
   </div>
