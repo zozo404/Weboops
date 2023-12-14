@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="selection:bg-cyan-500 selection:text-black">
+  <div class="selection:bg-cyan-500 selection:text-black bg-orange-200">
     <Header />
     <nuxt />
     <Footer />
@@ -8,7 +8,7 @@
 </template>
 <script>
 export default {
-  name: 'DefaultLayout'
+  name: "DefaultLayout"
 }
 </script>
 <style>
