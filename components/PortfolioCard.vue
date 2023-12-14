@@ -29,7 +29,7 @@
 </template>
 <script>
 export default {
-  name: 'PortfolioCard',
+  name: "PortfolioCard",
   props: {
     works: {
       default: null,
