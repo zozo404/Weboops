@@ -19,18 +19,21 @@
           {{ product.title }}
         </p>
         <br>
-        <p>
-          Vous pouvez accéder au github du projet <br>
-          btn buy
-        </p>
+        <BtnBuy :product="product" />
       </div>
     </div>
   </div>
 </template>
+
 <script>
 import { mapGetters } from "vuex"
+import BtnBuy from "@/components/BtnBuy.vue"
+
 export default {
   name: "SlugPage",
+  components: {
+    BtnBuy
+  },
   computed: {
     ...mapGetters(["getProduct"]),
     routeSlug () {

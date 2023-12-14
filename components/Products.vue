@@ -1,9 +1,6 @@
 <template>
   <div class="relative">
-    <div class="text-center">
-      <h2 class="text-4xl font-extrabold text-gray-800 mb-6">
-        Discover our products
-      </h2>
+    <div>
       <!-- start card for -->
       <div>
         <div
@@ -14,7 +11,7 @@
           <div
             v-for="product in products"
             :key="product.id"
-            class="group cursor-pointer group overflow-hidden relative text-gray-50 h-72 w-72 rounded-2xl hover:duration-700 duration-700"
+            class="group group overflow-hidden relative text-gray-50 h-72 w-72 rounded-2xl duration-700 hover:duration-700"
           >
             <div
               class="w-72 h-full bg-cover bg-center text-gray-800"
@@ -27,7 +24,7 @@
               />
             </div>
             <div
-              class="absolute bg-gray-50 -bottom-24 w-72 h-36 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500 group-hover:h-auto"
+              class="absolute bg-gray-50 -bottom-24 w-72 h-36 p-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-500 duration-500 group-hover:h-auto"
             >
               <div
                 class="text-black font-bold text-lg flex flex-row flex-wrap justify-evenly"
