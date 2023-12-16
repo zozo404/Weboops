@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Main content -->
-    <main class="container mx-auto my-4 lg:my-0 px-4 text-gray-800 2xl:px-24 3xl:px-4">
+    <main class="container mx-auto my-4 px-4 text-gray-800 2xl:px-24 3xl:px-4">
       <section class="text-center">
         <h1 class="text-4xl font-extrabold text-gray-800 mb-6 font-sans">
           Who are we ?
@@ -37,6 +37,7 @@
                 :alt="team.imageId.alt"
                 class="w-full h-32 object-cover mb-4 rounded"
                 provider="sanity"
+                loading="lazy"
               />
               <h3 class="text-xl font-bold">
                 {{ team.name }}

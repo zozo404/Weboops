@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Main content -->
-    <main class="container mx-auto my-8 px-4 2xl:px-24 3xl:px-4 md:mb-0">
+    <main class="container mx-auto my-4 px-4 2xl:px-24 3xl:px-4 md:mb-0">
       <div class="text-center pb-4 xl:pb-12">
         <h1 class="text-4xl font-extrabold text-gray-800 mb-6 font-sans">
           Contact us
@@ -13,16 +13,16 @@
       <strong><i>Fake contact form</i></strong>
       <!-- Contact form -->
       <section class="lg:flex lg:flex-wrap lg:justify-around">
-        <div class="lg:flex-grow flex flex-col lg:pr-4">
+        <div class="lg:flex-grow flex flex-col lg:pr-4 md:items-center">
           <h2 class="text-2xl font-bold mb-4">
             Contact formt
           </h2>
-          <form class="max-w-lg" @submit.prevent="submitForm">
+          <form class="max-w-lg md:w-full" @submit.prevent="submitForm">
             <!-- Nom et prénom -->
             <div class="mb-4">
               <label
                 for="fullName"
-                class="block text-basefont-medium text-gray-900"
+                class="block text-base text-gray-900"
               >First and last name</label>
               <input
                 id="fullName"
@@ -37,7 +37,7 @@
             <div class="mb-4">
               <label
                 for="email"
-                class="block text-basefont-medium text-gray-900"
+                class="block text-base text-gray-900"
               >Email</label>
               <input
                 id="email"
@@ -52,7 +52,7 @@
             <div class="mb-4">
               <label
                 for="object"
-                class="block text-basefont-medium text-gray-900"
+                class="block text-base text-gray-900"
               >Object</label>
               <input
                 id="object"
@@ -67,7 +67,7 @@
             <div class="mb-4">
               <label
                 for="message"
-                class="block text-basefont-medium text-gray-900"
+                class="block text-base text-gray-900"
               >Message</label>
               <textarea
                 id="message"
@@ -79,7 +79,7 @@
             </div>
 
             <!-- Send button -->
-            <div class="text-center sm:text-start">
+            <div class="text-center sm:text-start md:text-center">
               <button
                 class="smky-btn3 relative hover:text-[#FBD1A2] py-2 px-6 after:absolute after:h-1 after:hover:h-[200%] transition-all duration-500 hover:transition-all hover:duration-500 after:transition-all after:duration-500 after:hover:transition-all after:hover:duration-500 overflow-hidden z-10 after:z-[-10] after:bg-[#403233] after:rounded-t-full after:w-full after:bottom-0 after:left-0 text-black w-1/2 self-center"
                 type="submit"
@@ -122,14 +122,16 @@
             </a>
           </div>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3143337.630630797!2d3.2825448!3d39.7022208!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1702056238801!5m2!1sfr!2sfr"
-          height="300"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="w-full mt-2 lg:hidden border border-black"
-        />
+        <div class="flex justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3143337.630630797!2d3.2825448!3d39.7022208!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1702056238801!5m2!1sfr!2sfr"
+            height="300"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full md:w-3/4 mt-2 lg:hidden border border-black"
+          />
+        </div>
       </section>
     </main>
   </div>
