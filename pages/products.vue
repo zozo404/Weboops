@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <h2 class="text-4xl font-extrabold text-gray-800 mb-6">
+    <h2 class="text-4xl font-extrabold text-gray-800 mb-6 font-sans">
       Discover our products
     </h2>
     <Products :products="Products" />
