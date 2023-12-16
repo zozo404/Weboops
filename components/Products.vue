@@ -21,6 +21,7 @@
                 :alt="product.imageId.alt"
                 provider="sanity"
                 class="w-72 h-full object-cover object-center rounded-2xl hover:duration-700 duration-700"
+                loading="lazy"
               />
             </div>
             <div

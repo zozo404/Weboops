@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="text-center px-0 iphoneSE:px-8">
+  <div class="text-center px-0 iphoneSE:px-8 container mx-auto my-4">
     <ContentMain />
     <Faq />
     <!-- <ContactMe class="scroll-mt-60 lg:scroll-mt-40" /> -->

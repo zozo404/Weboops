@@ -9,7 +9,7 @@
       Voluptatum maiores, assumenda rerum fugiat sequi recusandae animi et
       consequuntur quidem !
     </p>
-    <h1 class="text-2xl font-extrabold text-gray-800 my-2">
+    <h1 class="text-xl font-extrabold font-sans text-gray-800 my-2">
       See at our new products
     </h1>
     <Products :products="Products" />
@@ -28,8 +28,10 @@ export default {
         product => product.new === true
       )
 
+      // Sort newProducts by descending ID
+      const sliceProducts = newProducts.slice().sort((a, b) => b.id - a.id)
       // Limit of products to display (3)
-      return newProducts.slice(0, 3)
+      return sliceProducts.slice(0, 3)
     }
   }
 }
