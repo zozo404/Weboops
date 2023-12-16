@@ -1,25 +1,37 @@
 <template>
-  <div>
-    <div class="flex flex-col items-center mt-10 gap-4">
-      <NuxtLink to="/products">
-        <h1 class="pl-2 py-3">
-          <i class="fa-solid fa-arrow-left" />
-          Retour
-        </h1>
-      </NuxtLink>
+  <div class="text-center">
+    <NuxtLink to="/products">
+      <span class="pl-2 py-3">
+        <i class="fa-solid fa-arrow-left" />
+        Back
+      </span>
+    </NuxtLink>
+    <div class="flex flex-col items-center mt-10 gap-4 lg:flex-row lg:px-12 2xl:px-24 3xl:px-28">
+      <!-- img -->
       <NuxtImg
         provider="sanity"
         :src="product.imageId.asset._ref"
         :alt="product.imageId.alt"
         placeholder
-        class="w-auto h-auto sm:w-1/2 rounded-md"
+        class="w-auto h-auto sm:w-1/2 rounded-md 2xl:max-w-xl 3xl:max-w-2xl"
       />
-      <div class="mt-4 px-5 flex flex-col text-center w-4/5 lg:w-1/2">
-        <p class="my-8">
-          {{ product.title }}
-        </p>
-        <br>
-        <BtnBuy :product="product" />
+      <div class="px-2 md:w-2/3 lg:w-auto lg:flex lg:flex-col lg:items-center lg:grow">
+        <!-- name of product -->
+        <div class="mt-4 px-5 flex flex-col text-center md:w-auto lg:w-auto">
+          <p class="first-letter:uppercase text-xl lg:text-2xl xl:text-3xl font-extrabold text-gray-800 font-sans">
+            {{ product.title }}
+          </p>
+        <!-- description of product -->
+        </div>
+        <div class="mt-4 px-5 flex flex-col text-center md:w-auto lg:w-auto">
+          <p class="first-letter:uppercase">
+            {{ product.description }}
+          </p>
+        <!-- btn buy compo -->
+        </div>
+        <div class="mt-4 px-5 flex flex-col text-center md:w-auto lg:w-auto">
+          <BtnBuy :product="product" />
+        </div>
       </div>
     </div>
   </div>

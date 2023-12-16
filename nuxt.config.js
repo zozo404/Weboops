@@ -4,7 +4,7 @@ export default {
   devtools: { enabled: true },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "weboops",
+    title: "Weboops",
     htmlAttrs: {
       lang: "fr"
     },
