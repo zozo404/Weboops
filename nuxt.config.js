@@ -4,24 +4,24 @@ export default {
   devtools: { enabled: true },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "zozoy",
+    title: "weboops",
     htmlAttrs: {
       lang: "fr"
     },
     bodyAttrs: {
-      class: "font-comfortaa"
+      class: ""
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Bienvenue sur mon site cv, il permet de montrer mes compétences ainsi que mes réalisations" },
+      { hid: "description", name: "description", content: "Welcome to Weboops, you can watch and buy products you like !" },
       { name: "format-detection", content: "telephone=no" }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+        href: "https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap"
       }
     ],
     script: [

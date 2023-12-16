@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- Main content -->
-    <main class="container mx-auto my-8 px-4 md:mb-0">
-      <div>
-        <h1 class="text-4xl font-bold mb-4">
+    <main class="container mx-auto my-8 px-4 2xl:px-24 3xl:px-4 md:mb-0">
+      <div class="text-center pb-4 xl:pb-12">
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-6 font-sans">
           Contact us
         </h1>
         <p class="mb-8">
@@ -22,7 +22,7 @@
             <div class="mb-4">
               <label
                 for="fullName"
-                class="block text-sm font-medium text-gray-600"
+                class="block text-basefont-medium text-gray-900"
               >First and last name</label>
               <input
                 id="fullName"
@@ -37,7 +37,7 @@
             <div class="mb-4">
               <label
                 for="email"
-                class="block text-sm font-medium text-gray-600"
+                class="block text-basefont-medium text-gray-900"
               >Email</label>
               <input
                 id="email"
@@ -52,7 +52,7 @@
             <div class="mb-4">
               <label
                 for="object"
-                class="block text-sm font-medium text-gray-600"
+                class="block text-basefont-medium text-gray-900"
               >Object</label>
               <input
                 id="object"
@@ -67,7 +67,7 @@
             <div class="mb-4">
               <label
                 for="message"
-                class="block text-sm font-medium text-gray-600"
+                class="block text-basefont-medium text-gray-900"
               >Message</label>
               <textarea
                 id="message"
@@ -110,7 +110,7 @@
             Contact details
           </h2>
           <strong><i>Fake data</i></strong>
-          <p>
+          <div class="text-lg">
             <a href="https://maps.app.goo.gl/SMRWnJ9YUquGmZ8B8" target="_blank">
               <strong>Adresse :</strong> 123 Rue de l'Exemple, Ville, Palma<br>
             </a>
@@ -120,7 +120,7 @@
             <a href="mailto:fake@mail" target="_blank">
               <strong>E-mail :</strong> fake@mail
             </a>
-          </p>
+          </div>
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3143337.630630797!2d3.2825448!3d39.7022208!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1702056238801!5m2!1sfr!2sfr"
@@ -150,6 +150,7 @@ export default {
   methods: {
     submitForm () {
       // Mettez ici la logique pour envoyer le formulaire (par exemple, une requête API)
+      // eslint-disable-next-line no-console
       console.log("Formulaire soumis !")
     }
   }

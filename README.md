@@ -18,6 +18,7 @@ $ yarn dev
 
 ```
 🔌 Data is stored on Sanity
+
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 

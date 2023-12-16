@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-4xl font-extrabold text-gray-800 mb-6">
+    <h1 class="text-4xl font-black text-gray-800 mb-6 font-sans">
       Welcome to Weboops
     </h1>
     <p class="container mx-auto pb-4 text-lg font-bold text-gray-800">

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-4 items-center text-base font-semibold pt-4 md:relative md:top-5">
+  <div class="flex flex-col gap-4 items-center text-base lg:text-lg font-semibold pt-4 md:relative md:top-5">
     <h2>
       FAQ's :
     </h2>

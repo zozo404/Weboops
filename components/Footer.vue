@@ -24,7 +24,7 @@
         <div class="pt-4">
           <!-- summary -->
           <ul class="flex justify-around">
-            <li v-for="section in sections" :key="section.id">
+            <li v-for="section in sections" :key="section.id" class="hover:text-orange-200 transition">
               <NuxtLink :to="section.link">
                 {{ section.name }}
               </NuxtLink>

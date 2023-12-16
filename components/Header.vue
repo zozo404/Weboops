@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-zinc-900 w-full z-20 sticky top-0">
+  <header class="bg-zinc-900 w-full z-20 sticky top-0 text-orange-200">
     <!-- nav desktop -->
     <nav
       class="lg:max-h-28 max-h-20 w-full py-4 lg:py-6 grid grid-cols-2 grid-rows-1 lg:grid-cols-2 items-center justify-between lg:border-none bg-zinc-900"
@@ -32,7 +32,7 @@
           <NuxtLink
             key="Index"
             :to="lien.lien"
-            class="text-base lg:text-xl 2xl:text-2xl font-medium text-gray-300 hover:text-indigo-50"
+            class="text-base lg:text-xl 2xl:text-2xl font-medium hover:text-orange-400 transition"
             @click="toggle"
           >
             {{ lien.texte }}
@@ -82,7 +82,7 @@
         <NuxtLink
           key="Index"
           :to="lien.lien"
-          class="text-2xl font-medium text-gray-300 hover:text-indigo-50"
+          class="text-2xl font-medium hover:text-orange-400 transition"
         >
           {{ lien.texte }}
         </NuxtLink>
