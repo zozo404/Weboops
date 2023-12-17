@@ -1,7 +1,7 @@
 # Weboops
 Welcome to my new site Weboops 👋
 
-<!-- Access: [weboops.netlify.app](https://weboops.netlify.app) -->
+Access: [weboops.netlify.app](https://weboops.netlify.app)
 ## Installation
 
 ```bash
