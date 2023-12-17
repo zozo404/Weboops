@@ -13,7 +13,7 @@
       <strong><i>Fake contact form</i></strong>
       <!-- Contact form -->
       <section class="lg:flex lg:flex-wrap lg:justify-around">
-        <div class="lg:flex-grow flex flex-col lg:pr-4 md:items-center">
+        <div class="lg:flex-grow 3xl:flex-grow-0 3xl:w-2/6 flex flex-col lg:pr-4 md:items-center">
           <h2 class="text-2xl font-bold mb-4">
             Contact formt
           </h2>

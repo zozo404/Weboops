@@ -17,4 +17,23 @@ html{
   font-family: 'Sarabun';
   font-weight: bold;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #18181b;
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 1rem;
+    border: 3px solid #FED7AA;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-color: #000000;
+}
 </style>

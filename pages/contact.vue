@@ -1,5 +1,6 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <div>
-        <Contact />
-    </div>
+  <div>
+    <Contact />
+  </div>
 </template>
