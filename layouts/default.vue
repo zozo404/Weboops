@@ -30,10 +30,9 @@ html{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #000;
+    background: #FED7AA;
     border-radius: 1rem;
-    border: 3px solid #FED7AA;
+    border: 3px solid #000000;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-color: #000000;
 }
 </style>
