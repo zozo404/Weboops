@@ -86,5 +86,8 @@ export default {
     sanity: {
       projectId: "uul9kym0"
     }
+  },
+  generate: {
+    fallback: true
   }
 }
