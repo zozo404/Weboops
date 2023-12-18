@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div v-if="product" class="text-center">
     <NuxtLink to="/products">
       <span class="pl-2 py-3">
         <i class="fa-solid fa-arrow-left" />
@@ -35,6 +35,9 @@
       </div>
     </div>
   </div>
+  <div v-else>
+    <Error404 />
+  </div>
 </template>
 
 <script>
@@ -53,6 +56,12 @@ export default {
     },
     product () {
       return this.getProduct.find(el => el.slug.current === this.routeSlug)
+    }
+  },
+  // Ajoutez cette méthode pour la redirection vers la page 404
+  beforeMount () {
+    if (!this.product) {
+      this.$router.push("/error404") // Assurez-vous que le chemin est correct
     }
   }
 }
