@@ -61,7 +61,7 @@ export default {
   // Ajoutez cette méthode pour la redirection vers la page 404
   beforeMount () {
     if (!this.product) {
-      this.$router.push("/error404") // Assurez-vous que le chemin est correct
+      this.$router.push("../layouts/error") // Assurez-vous que le chemin est correct
     }
   }
 }

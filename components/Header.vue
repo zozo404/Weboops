@@ -6,11 +6,23 @@
       aria-label="Top"
     >
       <!-- logo -->
-      <NuxtLink to="/" class="flex justify-center lg:col-span-1 h-full">
+      <NuxtLink v-if="Logo" to="/" class="flex justify-center lg:col-span-1 h-full">
         <span class="sr-only">Logo</span>
         <!-- mettre img -->
         <NuxtImg
           :src="Logo.imageId.asset._ref"
+          provider="sanity"
+          alt="logo"
+          class="h-full"
+          sizes="xs:100vw"
+        />
+      </NuxtLink>
+      <!--Logo else for 404 page-->
+      <NuxtLink v-else to="/" class="flex justify-center lg:col-span-1 h-full">
+        <span class="sr-only">Logo</span>
+        <!-- mettre img -->
+        <NuxtImg
+          src="https://cdn.sanity.io/images/uul9kym0/production/3c2b7a1b377011b67ab070096882b25100a30760-7974x6930.png?w=2000&fit=max&auto=format"
           provider="sanity"
           alt="logo"
           class="h-full"
@@ -50,11 +62,23 @@
         class="grid grid-cols-2 grid-rows-1 col-span-2 my-4 h-12 justify-items-center w-full"
       >
         <!-- logo -->
-        <NuxtLink to="/" class="flex justify-center lg:col-span-1 h-full">
+        <NuxtLink v-if="Logo" to="/" class="flex justify-center lg:col-span-1 h-full">
           <span class="sr-only">Logo</span>
           <!-- mettre img -->
           <NuxtImg
             :src="Logo.imageId.asset._ref"
+            provider="sanity"
+            alt="logo"
+            class="h-full"
+            sizes="xs:100vw"
+          />
+        </NuxtLink>
+        <!-- else for 404 page -->
+        <NuxtLink v-else to="/" class="flex justify-center lg:col-span-1 h-full">
+          <span class="sr-only">Logo</span>
+          <!-- mettre img -->
+          <NuxtImg
+            src="https://cdn.sanity.io/images/uul9kym0/production/3c2b7a1b377011b67ab070096882b25100a30760-7974x6930.png?w=2000&fit=max&auto=format"
             provider="sanity"
             alt="logo"
             class="h-full"
