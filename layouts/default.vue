@@ -8,8 +8,16 @@
   </div>
 </template>
 <script>
+import Header from "@/components/Header.vue"
+import SvgHeader from "@/components/SvgHeader.vue"
+import Footer from "@/components/Footer.vue"
 export default {
-  name: "DefaultLayout"
+  name: "DefaultLayout",
+  components: {
+    Header,
+    SvgHeader,
+    Footer
+  }
 }
 </script>
 <style>
