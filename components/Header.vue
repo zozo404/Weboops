@@ -22,8 +22,7 @@
         <span class="sr-only">Logo</span>
         <!-- mettre img -->
         <NuxtImg
-          src="https://cdn.sanity.io/images/uul9kym0/production/3c2b7a1b377011b67ab070096882b25100a30760-7974x6930.png"
-          provider="sanity"
+          src="/catLogo.png"
           alt="logo"
           class="h-full"
           sizes="xs:100vw"
@@ -78,8 +77,7 @@
           <span class="sr-only">Logo</span>
           <!-- mettre img -->
           <NuxtImg
-            src="https://cdn.sanity.io/images/uul9kym0/production/3c2b7a1b377011b67ab070096882b25100a30760-7974x6930.png"
-            provider="sanity"
+            src="/catLogo.png"
             alt="logo"
             class="h-full"
             sizes="xs:100vw"
