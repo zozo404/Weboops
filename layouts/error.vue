@@ -13,9 +13,9 @@
           <p>
             The page you are looking for might be under construction or does not exist.
           </p>
-          <NuxtLink to="/" class="text-indigo-500 hover:underline mt-4 block">
+          <a href="/" class="text-indigo-500 hover:underline mt-4 block">
             Go back home
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </h1>
@@ -31,9 +31,9 @@
           <p class="mt-4">
             The page you are looking for might be under construction or does not exist.
           </p>
-          <NuxtLink to="/" class="text-indigo-500 hover:underline mt-4 block">
+          <a href="/" class="text-indigo-500 hover:underline mt-4 block">
             Go back home
-          </NuxtLink>
+          </a>
         </div>
       </div>
     </h1>
