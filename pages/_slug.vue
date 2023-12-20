@@ -1,11 +1,11 @@
 <template>
   <div v-if="product" class="text-center">
-    <NuxtLink to="/products">
+    <div class="cursor-pointer" @click="goBack">
       <span class="pl-2 py-3">
         <i class="fa-solid fa-arrow-left" />
         Back
       </span>
-    </NuxtLink>
+    </div>
     <div class="flex flex-col items-center mt-10 gap-4 lg:flex-row lg:px-12 2xl:px-24 3xl:px-28">
       <!-- img -->
       <NuxtImg
@@ -62,6 +62,11 @@ export default {
   beforeMount () {
     if (!this.product) {
       this.$router.push("../layouts/error") // Assurez-vous que le chemin est correct
+    }
+  },
+  methods: {
+    goBack () {
+      this.$router.back()
     }
   }
 }
