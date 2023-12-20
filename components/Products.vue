@@ -49,7 +49,7 @@
               </h1>
               <!-- description of product -->
               <p class="text-neutral-800">
-                {{ product.description }}
+                {{ truncateDescription(product.description) }}
               </p>
               <!-- btn buy -->
               <NuxtLink :to="product.slug.current" class="flex justify-center">
@@ -80,6 +80,16 @@ export default {
     products: {
       default: null,
       type: Array
+    }
+  },
+  methods: {
+    truncateDescription (description) {
+      const maxLength = 110
+      if (description.length <= maxLength) {
+        return description
+      } else {
+        return description.slice(0, maxLength) + "..."
+      }
     }
   }
 }
