@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="selection:bg-cyan-500 selection:text-black bg-orange-200">
+  <div class="selection:bg-gray-900 selection:text-orange-200 bg-orange-200">
     <Header />
     <SvgHeader />
     <nuxt />
